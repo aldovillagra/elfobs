@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "elfobs"
+version = "0.1.0"
+description = ""
+authors = ["Aldo A. Villagra B. <Aldo A. Villagra B.>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
