@@ -187,6 +187,16 @@ docs = ["furo", "olefile", "sphinx (>=2.4)", "sphinx-copybutton", "sphinx-inline
 tests = ["check-manifest", "coverage", "defusedxml", "markdown2", "olefile", "packaging", "pyroma", "pytest", "pytest-cov", "pytest-timeout"]
 
 [[package]]
+name = "pyalsaaudio"
+version = "0.10.0"
+description = "ALSA bindings"
+optional = false
+python-versions = "*"
+files = [
+    {file = "pyalsaaudio-0.10.0.tar.gz", hash = "sha256:e21175500a2bd310ae3867e7991639defc1e2a5c92cf1b9f7083296b346738ab"},
+]
+
+[[package]]
 name = "pygments"
 version = "2.16.1"
 description = "Pygments is a syntax highlighting package written in Python."
@@ -298,7 +308,6 @@ files = [
 [package.dependencies]
 markdown-it-py = ">=2.2.0"
 pygments = ">=2.13.0,<3.0.0"
-typing-extensions = {version = ">=4.0.0,<5.0", markers = "python_version < \"3.9\""}
 
 [package.extras]
 jupyter = ["ipywidgets (>=7.5.1,<9)"]
@@ -362,5 +371,5 @@ files = [
 
 [metadata]
 lock-version = "2.0"
-python-versions = "^3.8"
-content-hash = "8902c0a091eca0bb0834a85c1f00e58d4ab4af10a524529cf88e1658ef8928b0"
+python-versions = "^3.9"
+content-hash = "28e044776427ea7a84709085a6dbda4a0f162dc1f212ab2ddc37d0ab57b6c16e"

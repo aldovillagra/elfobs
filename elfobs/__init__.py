@@ -23,6 +23,10 @@ image:
   position_x: 10
   position_y: 10
   output: /tmp/ElFaroWithDate.jpg
+sound:
+  input: alsa_input.pci-0000_00_1f.3.analog-stereo
+display:
+  default: None
     """
     conf = OmegaConf.create(conf_yaml)
     with open(default_config, 'w') as file:
