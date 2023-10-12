@@ -71,6 +71,24 @@ files = [
 ]
 
 [[package]]
+name = "obsws-python"
+version = "1.6.1"
+description = "A Python SDK for OBS Studio WebSocket v5.0"
+optional = false
+python-versions = ">=3.9"
+files = [
+    {file = "obsws_python-1.6.1-py3-none-any.whl", hash = "sha256:15c7ef93787aa98f05b6c9f520b7994859bfbd78289b2e93d632047d1ff9e8ec"},
+    {file = "obsws_python-1.6.1.tar.gz", hash = "sha256:9f5978337c557e9fbca673b5ac5dd6c3b570ca2e86083dff4072dbad9397a7bc"},
+]
+
+[package.dependencies]
+tomli = {version = ">=2.0.1", markers = "python_version < \"3.11\""}
+websocket-client = "*"
+
+[package.extras]
+dev = ["black", "isort", "pytest", "pytest-randomly"]
+
+[[package]]
 name = "omegaconf"
 version = "2.3.0"
 description = "A flexible configuration library"
@@ -335,6 +353,17 @@ files = [
 ]
 
 [[package]]
+name = "tomli"
+version = "2.0.1"
+description = "A lil' TOML parser"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "tomli-2.0.1-py3-none-any.whl", hash = "sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc"},
+    {file = "tomli-2.0.1.tar.gz", hash = "sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f"},
+]
+
+[[package]]
 name = "typer"
 version = "0.9.0"
 description = "Typer, build great CLIs. Easy to code. Based on Python type hints."
@@ -369,7 +398,38 @@ files = [
     {file = "typing_extensions-4.8.0.tar.gz", hash = "sha256:df8e4339e9cb77357558cbdbceca33c303714cf861d1eef15e1070055ae8b7ef"},
 ]
 
+[[package]]
+name = "v4l2py"
+version = "2.3.0"
+description = "Human friendly video for linux"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "v4l2py-2.3.0.tar.gz", hash = "sha256:2d4dd81c1963186b25ac7e989cbf2ff013f881047ce2142710df04beea9a3525"},
+]
+
+[package.extras]
+build = ["build (>=0.10.0)", "twine (>=4.0.2)"]
+dev = ["black (>=23.3.0)", "build (>=0.10.0)", "ruff (>=0.0.261)", "twine (>=4.0.2)", "ward (>=0.67.0b0)", "ward-coverage (>=0.3.0)"]
+test = ["ward (>=0.67.0b0)", "ward-coverage (>=0.3.0)"]
+
+[[package]]
+name = "websocket-client"
+version = "1.6.4"
+description = "WebSocket client for Python with low level API options"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "websocket-client-1.6.4.tar.gz", hash = "sha256:b3324019b3c28572086c4a319f91d1dcd44e6e11cd340232978c684a7650d0df"},
+    {file = "websocket_client-1.6.4-py3-none-any.whl", hash = "sha256:084072e0a7f5f347ef2ac3d8698a5e0b4ffbfcab607628cadabc650fc9a83a24"},
+]
+
+[package.extras]
+docs = ["Sphinx (>=6.0)", "sphinx-rtd-theme (>=1.1.0)"]
+optional = ["python-socks", "wsaccel"]
+test = ["websockets"]
+
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "28e044776427ea7a84709085a6dbda4a0f162dc1f212ab2ddc37d0ab57b6c16e"
+content-hash = "4821c8753c44ee2ed427f4a5d9b99e26df2683551cbf4f005112fd41460ebd94"

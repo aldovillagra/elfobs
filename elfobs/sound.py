@@ -1,7 +1,7 @@
 import alsaaudio
 import typer
 
-from elfobs import config, console
+from elfobs import OmegaConf, config, console
 
 app = typer.Typer()
 
@@ -58,4 +58,4 @@ def conf():
     """
     Show Sound Configuration
     """
-    console.print(config['sound'])
+    console.print(OmegaConf.to_yaml(config['sound']))

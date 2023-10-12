@@ -3,7 +3,7 @@ from shlex import split
 
 import typer
 
-from elfobs import config, console
+from elfobs import OmegaConf, config, console
 
 app = typer.Typer()
 
@@ -57,4 +57,4 @@ def conf():
     """
     Show Display Configuration
     """
-    console.print(config['display'])
+    console.print(OmegaConf.to_yaml(config['display']))

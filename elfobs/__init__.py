@@ -27,6 +27,12 @@ sound:
   input: alsa_input.pci-0000_00_1f.3.analog-stereo
 display:
   default: None
+video:
+  id: 0
+obs:
+  url: localhost
+  port: 4455
+  password: Ch@ng3MENOW!.
     """
     conf = OmegaConf.create(conf_yaml)
     with open(default_config, 'w') as file:

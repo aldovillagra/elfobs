@@ -4,7 +4,7 @@ import pendulum
 import typer
 from PIL import Image, ImageDraw, ImageFont
 
-from elfobs import config, console
+from elfobs import OmegaConf, config, console
 
 from . import fonts
 
@@ -38,7 +38,7 @@ def conf():
     """
     Show Image Configuration
     """
-    console.print(config['image'])
+    console.print(OmegaConf.to_yaml(config['image']))
 
 
 @app.command()
