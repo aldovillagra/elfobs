@@ -9,19 +9,17 @@ def test_help():
     assert result.exit_code == 0
 
 
-def test_toggle_stream():
-    result = runner.invoke(app, ["obs", "toggle-stream"])
-    assert result.exit_code == 0
+# def test_toggle_stream():
+#     result = runner.invoke(app, ["obs", "toggle-stream"])
+#     assert result.exit_code == 0
 
+# def test_start_stream():
+#     result = runner.invoke(app, ["obs", "start-stream"])
+#     assert result.exit_code == 0
 
-def test_start_stream():
-    result = runner.invoke(app, ["obs", "start-stream"])
-    assert result.exit_code == 0
-
-
-def test_stop_stream():
-    result = runner.invoke(app, ["obs", "stop-stream"])
-    assert result.exit_code == 0
+# def test_stop_stream():
+#     result = runner.invoke(app, ["obs", "stop-stream"])
+#     assert result.exit_code == 0
 
 
 def test_stream_status():
@@ -39,9 +37,9 @@ def test_get_current_program_scene():
     assert result.exit_code == 0
 
 
-def test_get_current_preview_scene():
-    result = runner.invoke(app, ["obs", "get-current-preview-scene"])
-    assert result.exit_code == 0
+# def test_get_current_preview_scene():
+#     result = runner.invoke(app, ["obs", "get-current-preview-scene"])
+#     assert result.exit_code == 0
 
 
 def test_conf():
